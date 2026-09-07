@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* 1. VARIABLES CSS (NUEVO: Para gestión de temas y colores) */
+:root {
+    --color-bg-dark: #1A1A2E;        /* Fondo principal oscuro */
+    --color-header-bg: #0F3460;      /* Fondo de header/secciones */
+    --color-text-light: #EEEEEE;     /* Color de texto principal */
+    --color-accent-neon: #00FFFF;    /* Acento (Cian) - Hover, bordes */
+    --color-accent-energy: #E94560;  /* Acento (Rojo) - Botones */
+    --color-card-bg: #2E384D;        /* Fondo de tarjetas/artículos */
+    --color-dropdown-bg: #0F3460;    /* Fondo del desplegable */
+}
+
+/* BASE GLOBAL */
+body {
+    background-color: var(--color-bg-dark);
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* 2. HEADER Y NAVEGACIÓN (Diseño más compacto y fijo) */
+header {
+    background-image:linear-gradient(to left, rgb(31, 26, 78), rgb(141, 141, 247));;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; 
+}
+
+.logo {
+    height: 60px; 
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent-neon); 
+    border-bottom: 2px solid var(--color-accent-neon);
+}
+
+.carro {
+    position: relative;
+}
+
+/* ************ MODIFICACIÓN PARA MENÚ DESPLEGABLE DE IDIOMAS ************ */
+.idiomas {
+    position: relative;
+    /* Necesario para que el área de hover del padre abarque el desplegable */
+    padding-bottom: 0; 
+}
+
+/* Título/Botón del desplegable */
+.idiomas h2.botones {
+    margin: 0;
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: color 0.3s;
+}
+
+.idiomas h2.botones:hover {
+    color: var(--color-accent-neon);
+}
+
+/* Contenedor del desplegable */
+.idiomas ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    /* Usamos el color de fondo del header para el menú */
+    background-color: var(--color-dropdown-bg); 
+    /* Borde neón que simula un marco */
+    border: 2px solid var(--color-accent-neon);
+    border-top: none; 
+    min-width: 100px; 
+    flex-direction: column;
+    z-index: 10;
+    padding: 0; /* Eliminado el padding del ul para que el li lo controle */
+    margin-top: 0; 
+    border-radius: 0 0 8px 8px; /* Bordes redondeados solo en la parte inferior */
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4); /* Efecto glow */
+    overflow: hidden; /* Limpia los bordes */
+}
+
+/* El menú se muestra cuando se pasa el ratón sobre el elemento padre '.idiomas' */
+.idiomas:hover ul {
+    display: flex;
+}
+
+.idiomas ul li {
+    margin: 0;
+    /* NUEVO: Borde separador entre idiomas */
+    border-top: 1px solid rgba(0, 255, 255, 0.1); 
+    transition: background-color 0.2s;
+}
+
+/* Enlace dentro del desplegable */
+.idiomas ul li a {
+    font-size: 1em;
+    padding: 8px 10px; /* Más padding para mayor área de clic */
+    display: block; 
+    text-align: center; /* ¡NUEVO: Centrado de texto! */
+    color: var(--color-text-light);
+    border-bottom: none; /* Elimina la línea azul del hover del nav principal */
+}
+
+.idiomas ul li:hover {
+    background-color: #1c5ba3; /* Fondo más claro al pasar el ratón */
+}
+
+.idiomas ul li a:hover {
+    color: var(--color-accent-neon);
+    text-shadow: 0 0 5px var(--color-accent-neon); /* Pequeño efecto glow en el texto */
+}
+/* *********************************************************************** */
+
+/* 3. CONTENIDO PRINCIPAL Y ARTÍCULOS */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+h1, h2, h3 {
+    color: var(--color-accent-neon);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article {
+    background: var(--color-card-bg);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); 
+    transition: transform 0.3s ease;
+    text-align: center; 
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.4);
+}
+
+.contenido article img {
+    display: block; 
+    margin: 15px auto; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contenido de la Página de Inicio (Inici.html) */
+.contenido2 {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenido2 h2, .contenido2 h3 {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--color-accent-neon);
+}
+
+.alado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.soporte img {
+    width: 100%;
+    height: auto;
+    margin: 0; 
+    border: 2px solid var(--color-accent-neon); 
+}
+
+/* 4. SECCIÓN DE SERVICIOS (Manteniment / Modding) */
+.torres img, .teclats img {
+    border: 2px solid var(--color-accent-energy);
+}
+
+/* 5. FORMULARIO DE CONTACTO (Rediseño) */
+form {
+    background: var(--color-card-bg);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid var(--color-accent-neon);
+    border-radius: 10px;
+    color: var(--color-text-light);
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: var(--color-accent-neon);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d4a60; 
+    color: var(--color-text-light);
+    box-sizing: border-box; 
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--color-accent-neon);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-accent-energy); 
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #C43B52;
+    transform: translateY(-2px);
+}
+
+/* 6. FOOTER (Diseño limpio) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-header-bg);
+    margin-top: 120px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+}
+
+.avis {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 15px;
+    display: inline-block; 
+}
+
+.avis:hover {
+    color: var(--color-accent-neon);
+}
+/* --- CORRECCIÓN STICKY FOOTER Y ESTRUCTURA BASE --- */
+html {
+    height: 100%; /* El HTML debe ocupar el 100% */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald, sans-serif;
+    
+    /* PROPIEDADES CRUCIALES PARA EL STICKY FOOTER */
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Coloca los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura visible */
+}
+
+/* El contenido (section.contenido o el form en Contacto) debe crecer para empujar el footer */
+.contenido {
+    flex-grow: 1; /* Permite que este elemento ocupe todo el espacio sobrante */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
+    box-sizing: border-box;
+}
+
+/* Para la página de Contacto (el formulario actúa como contenido principal) */
+body > form { 
+    flex-grow: 1; /* También debe crecer para empujar el footer */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-self: center; 
+}
+/* El resto de tu CSS (header, nav, article, footer, etc.) se mantiene igual. */
