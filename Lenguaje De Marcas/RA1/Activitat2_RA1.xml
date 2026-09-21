@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Aquesta pràctica ha estat realitzada per: Marc Arias Nuñez-->
+<!--les correccions necessàries en els següents elements incorrectes en XML-->
+<Llibre></Llibre>
+<llibre></llibre>
+<llibre>
+    <títol>El Quijote</títol>
+    <autor>Miguel de Cervantes</autor>
+</llibre>
+<element1></element1>
+<descripció>Aquest es el<enfasi>millor</enfasi>llibre.</descripció>
+<Aficions>Cine, Billar, Nedar ....</Aficions>
+<color_preferit>Blau</color_preferit>
+<comentari>Aquest llibre és &lt;fantàstic&gt;!</comentari>

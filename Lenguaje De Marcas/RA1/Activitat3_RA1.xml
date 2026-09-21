@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Aquesta pràctica ha estat realitzada per: Marc Arias Nuñez-->
+<series_television>
+    <serie nom="La que se avecina" any="2007">
+        <num_temp>15</num_temp>
+        <creador>Alberto y Laura Caballero y por Daniel Deorador</creador>
+    </serie>
+    <serie nom="FBI" any="2018">
+        <num_temp>8</num_temp>
+        <creador>Dick Wolf</creador>
+    </serie>
+</series_television>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clase>ASIX1AM</clase>
+<clase2>
+    <alumne>JOSE</alumne>
+</clase2>
+<persona>
+    <nom>Jose</nom>
+    <edat>15</edat>
+    <adreça>
+        <carrer>Carrer Joseador, 333</carrer>    
+    </adreça>
+</persona>
+
+<llibreria>
+    <nom>Biblioteca Central</nom>
+    <adreça_ll>Carrer Cultura, 12</adreça_ll>
+    <telefon>1234567889</telefon>
+    <llibre>
+        <titol>Quijote</titol>
+        <autor>Miguel de Cervantes</autor>
+        <any>1605</any>
+    </llibre>
+</llibreria>
+<paragraf>
+    Aquest és un <emfasi>exemple</emfasi> de contingut mixt.
+</paragraf>
+<article>
+    En aquest article, parlem sobre <tema>tecnologia</tema> i <tema>ciència </tema>. A més, explicarem com
+    aquest....
+</article>

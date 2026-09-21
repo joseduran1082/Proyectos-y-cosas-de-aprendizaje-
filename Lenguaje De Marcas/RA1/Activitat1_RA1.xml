@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Aquesta pràctica ha estat realitzada per: Marc Arias Nuñez-->
+<colecció_musica>
+    <cançó>
+        <titol>No me tiro</titol>
+        <aritsta>Swit EME</aritsta>
+        <any>2025</any>
+        <genere>Rap</genere>
+    </cançó>
+    <cançó>
+        <titol>Ver la Luz</titol>
+        <aritsta>Camin</aritsta>
+        <any>2025</any>
+        <genere>Rap</genere>
+    </cançó>
+    <cançó>
+        <titol>STAR</titol>
+        <aritsta>JC Reyes</aritsta>
+        <any>2025</any>
+        <genere>Rap</genere>
+    </cançó>
+</colecció_musica>

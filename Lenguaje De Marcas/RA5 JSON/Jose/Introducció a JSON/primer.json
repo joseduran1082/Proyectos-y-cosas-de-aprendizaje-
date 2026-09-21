@@ -1,0 +1,11 @@
+{
+    "nom": "Jose",
+    "edat": 19,
+    "email": "jsduran@alumnat.copernic.cat",
+    "intressos": ["programació", "música", "viatges"],
+    "adreça": {
+        "carrer": "Mossen Angel Rodamilans",
+        "ciutat": "Terrassa",
+        "codi_postal": "08222"
+    }
+}

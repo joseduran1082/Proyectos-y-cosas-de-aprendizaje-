@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifes i Inscripció</title>
+    <link rel="shortcout icon" href="../media/Imatges/logo.ico">
+</head>
+<body>
+    <header>
+        <img src="../media/Imatges/logo.jpg" alt="" width="100">
+        <h1>Tarifes i Inscripció</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inici</a></li>
+                <li><a href="../Horaris/activitats.html">Horaris</a></li>
+                <li><a href="inscripcio.html">Tarifes i Inscripció</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Les Nostres Tarifes</h2>
+            <ul>
+                <li><strong>Entrada Puntual:</strong> 10€</li>
+                <li><strong>Abonament Mensual:</strong>
+                    <ul>
+                        <li>Gimnàs: 35€</li>
+                        <li>Paddle: 50€</li>
+                        <li>Piscina: 25€</li>
+                    </ul>
+                </li>
+                <li><strong>Pack Complet:</strong> 80€</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>Formulari d'Inscripció</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dades Personals</legend>
+                    <label for="nom">Nom Complet:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom i Cognoms" required><br><br>
+                    <label for="data">Data de Naixement:</label>
+                    <input type="date" id="data" name="data" required><br><br>
+                    <label for="telefon">Telèfon:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="123456789" required>
+                    <br><br>
+                    <label for="email">Correu Electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@correu.com" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Modalitat d'Inscripció</legend>
+                    <p>Selecciona les activitats:</p>
+                    <input type="checkbox" id="gimnas" name="activitat" value="gimnas">
+                    <label for="gimnas">Gimnàs</label>
+                    <input type="checkbox" id="paddle" name="activitat" value="paddle">
+                    <label for="paddle">Paddle</label>                
+                    <input type="checkbox" id="piscina" name="activitat" value="piscina">
+                    <label for="piscina">Piscina</label><br><br>
+                    <p>Tipus d'Abonament:</p>
+                    <input type="radio" id="puntual" name="abonament" value="puntual">
+                    <label for="puntual">Entrada Puntual</label><br>               
+                    <input type="radio" id="mensual" name="abonament" value="mensual">
+                    <label for="mensual">Abonament Mensual</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Informació Addicional</legend>
+
+                    <label for="nivell">Selecciona el teu nivell:</label>
+                    <select id="nivell" name="nivell">
+                        <option>-- Selecciona un nivell --</option>
+                        <option value="principiant">Principiant</option>
+                        <option value="intermig">Intermig</option>
+                        <option value="avancat">Avançat</option>
+                    </select><br><br>
+                    <label for="observacions">Observacions addicionals:</label><br>
+                    <textarea id="observacions" name="observacions" rows="4" cols="50" placeholder="Escriu aquí qualsevol informació addicional"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar Inscripció">
+                <input type="reset" value="Netejar Formulari">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>La inscripció està subjecta a aprovació</p>
+    </footer>
+</body>
+</html>

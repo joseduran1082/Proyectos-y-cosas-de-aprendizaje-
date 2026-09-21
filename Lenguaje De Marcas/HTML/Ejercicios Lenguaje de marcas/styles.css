@@ -1,0 +1,69 @@
+
+body{
+    background-color:rgb(244, 244, 151);
+    background-image:url(Multimedia/clay-banks-u27Rrbs9Dwc-unsplash.jpg) ;
+}
+
+#titol-principal{
+    color: red;
+    font-size: large;
+}
+
+.destacat{
+    font-weight: bold;
+    background-color: yellow;
+}
+body{
+    font-family: sans-serif;
+}
+/*Els paràgrafs i les llistes han canviat de tipus de lletra automàticament sense haver-los
+seleccionat directament?
+
+R: Si ya que al seleccionar el body seleccionamos todo el contenido 
+*/
+
+ul{
+    border: solid;
+    margin: 50px;
+    padding: 50px;
+    background-color: aqua
+}
+/*Si elimines el padding, què passa amb el text i la vora negra? I si elimines el
+margin, què passa amb la caixa blava i els títols del voltant?
+
+R: Si elimino el padding se ve todo el contenido del ul muy junto e incomodo y si elimino al margin se ve todo el ul 
+ocupando toda la pantalla y es molesto 
+*/
+#fotomia{
+    width: 150px;
+    border: solid;
+    border-color: blue;
+    float: left;
+    margin-right: 15px;   
+    margin-bottom: 10px;
+}
+
+.fotosHobbie{
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-color: brown;
+}
+#video{
+    width: 40%;          
+    margin: 0 auto;  
+    justify-content: center;    
+    display: flex;
+}
+
+#video video{
+    width: 50%;         
+}
+.subtitol{
+    clear: both;
+}
+p{
+    color: rgb(246, 255, 0);
+}
